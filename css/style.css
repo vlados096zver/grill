@@ -206,7 +206,7 @@ img {
 	background-color: #ffbc0d;
 	border: none;
 	border-radius: 30px;
-	padding: 7px 24px;
+	padding: 7px 15px;
 	text-align: center;
 	font-family: Roboto;
 	transition: 0.25s background-color, 0.25s color;
@@ -220,6 +220,7 @@ img {
 .btn--cook {
 	max-width: 215px;
 	font-size: 18px;
+	padding: 19px 15px;
 }
 
 .header {
