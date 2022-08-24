@@ -1,0 +1,105 @@
+@import 'responsive'
+
+body
+	margin: 0
+	padding: 0
+	width: 100%
+	min-width: 300px
+	min-height: 100vh
+	overflow-x: hidden
+	text-size-adjust: none
+	-webkit-text-size-adjust: none
+	-ms-text-size-adjust: none
+	color: #363636
+	background-color: #F8F8F8
+	position: relative
+	font-size: 16px
+	line-height: 1.2
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	-webkit-tap-highlight-color: transparent
+	font-weight: normal
+	font-style: normal
+	font-family: Roboto
+	+media(break_small)
+		overflow-x: auto
+
+	&.active
+		position: relative
+		&:after
+			position: absolute
+			content: ' '
+			top: 0px
+			left: 0px
+			width: 100%
+			height: 100%
+			background-color: #F8F8F8
+
+* 
+	box-sizing: border-box
+
+*::after,
+*::before
+	box-sizing: border-box
+
+.visually-hidden
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	bottom: 0
+	padding: 0
+	white-space: nowrap
+	clip-path: inset(100%)
+	clip: rect(0 0 0 0)
+	overflow: hidden
+
+
+img
+	max-width: 100%
+	height: auto
+
+.svg-about
+	display: none
+
+
+.container
+	max-width: 1300px
+	width: 100%
+	padding: 0 20px
+	margin: 0 auto
+
+
+.title
+	font-size: 32px
+	line-height: 1
+	color: #000000
+	text-transform: uppercase
+	padding-bottom: 50px
+	font-weight: 900
+	+media(sm)
+		font-size: 30px	
+		text-align: center
+		padding-bottom: 40px
+	+media(minismall)
+		font-size: 26px	
+
+.btn
+	display: inline-block
+	cursor: pointer
+	width: 100%	
+	max-width: 114px
+	font-size: 14px
+	color: #333333	
+	background-color: #ffbc0d
+	border: none
+	border-radius: 30px
+	padding: 7px 24px
+	text-align: center
+	font-family: Roboto
+	transition: 0.25s background-color, 0.25s color
+	&:hover
+		background-color: #000
+		color: #fff
+	&--cook
+		max-width: 215px
+		font-size: 18px	

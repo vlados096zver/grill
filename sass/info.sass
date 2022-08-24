@@ -1,0 +1,56 @@
+@import 'responsive'
+
+.info
+	padding-top: 55px
+	margin-bottom: 80px
+	+media(sm)
+		padding-top: 45px	
+		margin-bottom: 62px	
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+	&__list
+		display: flex
+		margin-right: 45px
+		li
+			&:not(:last-child)
+				margin-right: 20px
+
+	&__elem,
+	&__box
+		font-size: 16px
+		color: #c92a1f
+		font-family: Inter
+		font-weight: 300
+		transition: 0.25s color
+		&:hover:not(.info__elem--schedule)
+			color: #000
+
+	&__elem
+		&:not(:last-child)
+			margin-right: 45px
+
+	&__elem,
+	&__box
+		display: block
+		width: max-content
+
+	.info__list
+		+media(sm)
+			margin-right: 0px
+			justify-content: center	
+			flex-basis: 100%
+			padding-bottom: 36px	
+
+	.info__wrap
+		+media(sm)
+			flex-direction: column
+
+		.info__elem,
+			+media(sm)
+				margin: 0 auto
+
+			&:not(:last-child)
+				margin-bottom: 36px	

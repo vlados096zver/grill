@@ -1,0 +1,219 @@
+@import 'responsive'
+
+.header
+	position: relative
+	z-index: 12
+	background-color: #fff
+	.info__wrap
+		+media(mdx)
+			flex-basis: 100%
+			padding-top: 8px
+		+media(sm)
+			display: none
+
+	.info__elem, .info__box
+		color: #000
+		&:hover:not(.info__elem--schedule)
+			color: #c92a1f
+
+	&__wrap
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		padding: 8px 0
+		+media(mdx)
+			justify-content: center
+		+media(sm)
+			justify-content: flex-start
+			padding: 0px
+
+	&__logo
+		display: block
+		max-width: 185px
+		width: 100%
+		margin-right: 85px
+		+media(lgxs)
+			margin-right: 45px
+		+media(sm)
+			max-width: 122px
+			margin-right: auto
+		+media(mini)
+			max-width: 85px
+		img
+			display: block
+
+	&__city
+		cursor: default
+		background-image: url(../img/icons/map.svg)
+		background-repeat: no-repeat
+		background-position: left center
+		font-size: 16px
+		color: #989898
+		padding: 2px 0
+		padding-left: 26px
+		margin-right: auto
+		font-family: Inter
+		font-weight: 300
+		+media(mdx)
+			margin-right: 0px
+		+media(sm)
+			display: none
+
+	&__content
+		background: #f3f3f3
+		box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.15)
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		+media(sm)
+			display: none
+
+	&__holder
+		display: flex
+		align-items: center
+		li:not(:last-child)
+			margin-right: 25px
+
+	&__box
+		display: block
+		font-size: 16px
+		text-transform: uppercase
+		color: #333333
+		padding: 15px 0
+		font-family: Inter
+		font-weight: 300
+		transition: 0.3s color
+		&:hover
+			color: #c92a1f
+
+	&__btn
+		cursor: pointer
+		display: block
+		font-size: 20px
+		color: #333333
+		background-color: #ffbc0d
+		background-image: url(../img/icons/cart.svg)
+		background-repeat: no-repeat
+		background-position: left 16px center
+		border: none
+		outline: none
+		box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25)
+		padding: 13px 16px
+		padding-left: 68px
+		padding-bottom: 14px
+		+media(mini)
+			padding-left: 50px	
+		&--mob
+			display: none
+			+media(sm)
+				display: block
+
+	&__row
+		width: 25px	
+		display: none	
+		margin-left: 18px
+		+media(sm)
+			display: block		
+
+		.info__wrap
+			+media(sm)
+				display: block
+				padding-top: 40px	
+
+			.info__list
+				+media(sm)
+					flex-direction: column
+					margin-right: 0px	
+
+			.info__box, .info__elem:not(:last-child)
+				margin-bottom: 20px	
+
+			.info__box, .info__elem
+				color: #c92a1f
+
+	&__info
+		display: flex
+		align-items: center
+		+media(lgs)
+			justify-content: center
+		+media(sm)
+			display: none
+			width: calc(100% + 40px)
+			top: 100%
+			left: -20px
+			right: 0px
+			z-index: 12
+			position: absolute
+			max-height: calc(100vh - 70px)
+			overflow-y: auto
+			overflow-x: hidden
+			padding: 15px 20px
+			background-color: #f8f8f8
+
+	&__link
+		display: block
+		font-size: 16px
+		line-height: 1.2
+		color: #000
+		text-transform: uppercase
+		padding: 15px 0
+		border-bottom: 1px solid #d9d9d9
+		text-align: center
+		font-weight: 300
+
+	&__holder
+		+media(smx)
+			flex-basis: 100%
+			margin-top: 25px
+
+
+
+.mobile-wrap
+	display: flex
+	align-items: center
+	justify-content: space-between
+	cursor: pointer
+
+.line-burger
+	display: block
+	position: absolute
+	top: 50%
+	left: 0
+	width: 25px
+	height: 3px
+	background-color: #c92a1f
+	transition: 0.5s width
+	&:after,
+	&:before
+		content: ''
+		position: absolute
+		width: 25px
+		height: 3px
+		background-color: #c92a1f
+		left: 0
+		transition: 0.5s
+	&:after
+		top: calc(100% + 5px)
+	&:before
+		bottom: calc(100% + 5px)
+
+.line-active
+	width: 0
+	&:after
+		top: 9px
+		transform: rotate(-45deg)
+		transform-origin: 0 0
+	&:before
+		bottom: 9px
+		transform: rotate(45deg)
+		transform-origin: 0 100%
+
+.main-nav__toggle
+	position: relative
+	cursor: pointer
+	display: block
+	width: 25px
+	height: 25px
+	margin-top: -5px

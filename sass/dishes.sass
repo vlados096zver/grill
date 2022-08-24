@@ -1,0 +1,101 @@
+@import 'responsive'
+
+.dishes
+	padding-bottom: 24px
+	&--inner
+		.dishes__wrap
+			margin: 0 -15px
+			+media(xxs)
+				margin: 0px
+
+		.dishes__item
+			width: calc(100% / 6 - 30px)
+			margin: 0 15px
+			margin-bottom: 32px
+			+media(lgs)
+				width: calc(100% / 5 - 30px)
+			+media(mdx)
+				width: calc(100% / 4 - 30px)
+			+media(smdx)
+				width: calc(100% / 3 - 30px)
+			+media(sm)
+				margin-bottom: 20px	
+			+media(smx)
+				width: calc(100% / 2 - 30px)
+			+media(xxs)
+				width: 100%
+				margin: 0px
+				margin-bottom: 20px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -10px
+
+	&__item
+		width: calc(100% / 4 - 20px)
+		filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.1))
+		margin: 0 10px
+		margin-bottom: 28px
+		+media(lgxs)
+			width: calc(100% / 3 - 20px)
+		+media(mdx)
+			width: calc(100% / 2 - 20px)
+		+media(sm)
+			max-width: 400px
+			width: 100%
+			margin: 0 auto
+			margin-bottom: 20px
+
+	&__content
+		background-color: #fff
+		padding: 20px
+		padding-bottom: 0px
+		+media(minismall)
+			padding: 20px 15px
+			padding-bottom: 0px
+
+	&__image 
+		img
+			display: block
+			width: 100%
+
+	&__subtitle
+		font-size: 16px
+		color: #000000
+		padding-bottom: 12px
+
+	&__text
+		padding-bottom: 18px
+		p
+			font-size: 12px
+			line-height: 1.67
+			color: #000000
+
+	&__inner
+		display: flex
+		flex-wrap: wrap
+		padding-bottom: 6px	
+		.btn
+			margin-bottom: 18px	
+
+	&__block
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		padding-right: 15px	
+		margin-right: auto
+
+	&__price,
+	&__weight
+		margin-bottom: 18px
+
+	&__price
+		font-size: 20px
+		color: #000000
+		font-weight: 700
+		margin-right: 18px
+
+	&__weight
+		font-size: 14px
+		color: #b6b6b6
