@@ -1,0 +1,57 @@
+
+
+.tabs
+	&__list
+		display: flex	
+
+	&__box
+		cursor: pointer
+		display: flex	
+		align-items: center
+		font-size: 16px	
+		color: #333333
+		padding: 15px 48px
+		+media(mdx)
+			padding: 15px 35px
+		+media(sm)
+			padding: 10px 18px
+		+media(mini)
+			padding: 10px 15px
+		+media(minismall)
+			font-size: 14px	
+
+		&--active
+			box-shadow: 0px -15px 30px rgba(0, 0, 0, 0.1)
+			background-color: #fff
+			color: #C92A1F
+			border-radius: 0px 0px 4px 4px
+
+	&__content
+		background-color: #fff
+		box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1)
+		padding: 0px 40px	
+		margin-bottom: 50px	
+		+media(lgxs)
+			padding: 0px 20px
+
+	&__discount
+		display: block	
+		font-size: 12px	
+		color: #333333
+		background: #FFBC0D
+		border-radius: 5px
+		padding: 3px 16px
+		margin-left: 18px
+		+media(minismall)
+			padding: 3px 8px
+			margin-left: 14px
+
+	&__item
+		padding-top: 45px	
+		
+	&__desc
+		padding-bottom: 30px
+		p
+			font-size: 14px	
+			line-height: 2.14	
+	

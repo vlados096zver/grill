@@ -1,0 +1,101 @@
+@import 'responsive'
+
+.order
+	margin-bottom: 50px	
+	.title
+		margin-bottom: 6px	
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -20px	
+		+media(md)
+			margin: 0px	
+
+		.order__item
+			width: calc(100% / 2 - 40px)
+			margin: 0 20px
+			margin-bottom: 38px	
+			+media(md)
+				width: 100%	
+				margin: 0px	
+				margin-bottom: 20px	
+
+		&--inner
+			.order__item
+				margin-bottom: 20px	
+				+media(md)
+					margin-bottom: 20px	
+				
+	&__item
+		position: relative
+		margin-bottom: 20px	
+		+media(md)
+			margin-bottom: 20px	
+		&:after
+			position: absolute
+			content: ' '
+			z-index: -1
+			top: -8px
+			left: 0px
+			width: 100%	
+			height: 8px
+			background-color: #F8F8F8	
+
+		&+.order__wrap
+			padding-top: 18px	
+			+media(mdx)
+				padding-top: 0px	
+
+	&__label
+		position: absolute
+		top: -8px
+		left: 8px
+		font-size: 16px	
+		color: #FFBC0D
+		text-transform: uppercase	
+		padding: 0 6px
+		&:after
+			position: absolute
+			content: ' '
+			left: 0px
+			top: 8px
+			width: 100%	
+			height: 2px	
+			background-color: #fff
+			
+		span
+			position: relative
+			z-index: 2
+
+	&__info
+		position: absolute
+		top: -6px
+		right: 12px
+		font-size: 14px
+		line-height: 1.2	
+		color: #CDCDCD
+		text-transform: uppercase		
+		padding: 0 5px
+		&:after
+			position: absolute
+			content: ' '
+			left: 0px
+			top: 6px
+			width: 100%	
+			height: 2px	
+			background-color: #fff
+
+		span
+			position: relative
+			z-index: 2
+
+	&__text
+		p
+			font-size: 14px	
+			line-height: 1.57	
+			&:not(:last-child)
+				padding-bottom: 1.5em	
+
+			a
+				color: #FFBC0D

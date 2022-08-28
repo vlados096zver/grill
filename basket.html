@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Вкусно гриль</title>
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+
+<header class="header">
+    <div class="container">
+        <div class="header__wrap">
+            <a href="" class="header__logo">
+                <img src="img/logo.png">
+            </a>
+            <p class="header__city">Краснодар</p>
+            <div class="info__wrap">
+                <ul class="info__list">
+                   <li><a href="" class="info__box">Доставка</a></li>
+                   <li><a href="" class="info__box">Оплата</a></li>
+                </ul>
+                <a href="tel:88002501065" class="info__elem">8 (800 250 10 65)</a>
+                <p class="info__elem info__elem--schedule">Ежедневно с 10:00 до 22:00</p>
+            </div>
+            <a href="" class="header__btn header__btn--mob">239 ₽</a>
+             <div class="header__row">
+                  <div class="mobile-wrap">
+                      <div class="main-nav__toggle">
+                          <span class="line-burger"></span>
+                       </div>
+                  </div>
+                  <div class="header__info"> 
+                    <ul >
+                          <li>
+                              <a href="#" class="header__link">Основные блюда</a>
+                          </li>
+                          <li>
+                              <a href="#"  class="header__link">Соусы</a>
+                          </li>
+                          <li>
+                              <a href="#" class="header__link">Дополнительно</a>
+                          </li>
+                          <li>
+                              <a href="#" class="header__link">Напитки</a>
+                          </li>
+                      </ul>
+                      <div class="info__wrap">
+                            <ul class="info__list">
+                               <li><a href="" class="info__box">Доставка</a></li>
+                               <li><a href="" class="info__box">Оплата</a></li>
+                            </ul>
+                            <a href="tel:88002501065" class="info__elem">8 (800 250 10 65)</a>
+                            <p class="info__elem info__elem--schedule">Ежедневно с 10:00 до 22:00</p>
+                        </div>
+                  </div>
+                 
+              </div>
+        </div>
+    </div>
+    <div class="header__content">
+        <div class="container">
+            <div class="header__inner">
+                <ul class="header__holder">
+                    <li><a href="" class="header__box">Основные блюда</a></li>
+                    <li><a href="" class="header__box">Соусы</a></li>
+                    <li><a href="" class="header__box">Дополнительно</a></li>
+                    <li><a href="" class="header__box">Напитки</a></li>
+                </ul>
+                <a href="" class="header__btn">239 ₽</a>
+            </div>
+        </div>
+    </div>   
+</header>
+
+<section class="basket">
+    <div class="container container--inner"> 
+        <a href="#" class="back">Вернуться на главную</a>
+        <p class="title">Корзина</p>
+         <div class="basket__item">
+            <div class="basket__image">
+                <img src="img/bg-dishes.png">
+            </div>
+            <p class="basket__title">Каннам салат</p>
+             <div class="basket__row">
+                <p class="basket__weight">190 гр.</p>
+                <p class="basket__single">239 ₽</p>
+            </div>
+            <div class="basket__inner"> 
+                <div class="basket__block">
+                    <button class="basket__arrow basket__arrow--increment" type="button"></button>
+                    <input type="text" value="14" class="basket__input" maxlength="2" data-price="239">
+                    <button class="basket__arrow basket__arrow--decrement" type="button"></button>
+                </div>
+                <p class="basket__sum"><span></span>₽</p>
+                <button class="basket__close"></button>
+            </div>
+        </div><!--end basket__item-->
+        <div class="basket__item">
+            <div class="basket__image">
+                <img src="img/bg-dishes.png">
+            </div>
+            <p class="basket__title">Каннам салат</p>
+            <div class="basket__row">
+                <p class="basket__weight">190 гр.</p>
+                <p class="basket__single">239 ₽</p>
+            </div>
+            <div class="basket__inner"> 
+                <div class="basket__block">
+                    <button class="basket__arrow basket__arrow--increment" type="button"></button>
+                    <input type="text" value="1" class="basket__input" maxlength="2" data-price="239">
+                    <button class="basket__arrow basket__arrow--decrement" type="button"></button>
+                </div>
+                <p class="basket__sum"><span></span>₽</p>
+                <button class="basket__close"></button>
+            </div>
+        </div><!--end basket__item-->
+    </div>
+</section>
+
+<section class="recommendation">  
+    <div class="container container--inner">   
+        <div class="recommendation__holder">
+            <p class="title">Мы рекомендуем</p>
+            <div class="recommendation__wrap-btn">  
+                <button id="r_prev" class="recommendation__btn recommendation__btn--prev"></button>
+                <button id="r_next" class="recommendation__btn recommendation__btn--next"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container"> 
+            <div class="swiper swiper__recommendation">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="dishes__item">
+                            <div class="dishes__image">
+                                <img src="img/bg-dishes.png">
+                            </div>
+                            <div class="dishes__content">
+                                 <p class="dishes__subtitle">Каннам салат</p>
+                                <div class="dishes__inner">
+                                    <div class="dishes__block">
+                                        <p class="dishes__price">239 ₽</p>
+                                        <p class="dishes__weight">190 ГР.</p>
+                                    </div>
+                                    <button class="btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dishes__item">
+                            <div class="dishes__image">
+                                <img src="img/bg-dishes.png">
+                            </div>
+                            <div class="dishes__content">
+                                 <p class="dishes__subtitle">Каннам салат</p>
+                                <div class="dishes__inner">
+                                    <div class="dishes__block">
+                                        <p class="dishes__price">239 ₽</p>
+                                        <p class="dishes__weight">190 ГР.</p>
+                                    </div>
+                                    <button class="btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dishes__item">
+                            <div class="dishes__image">
+                                <img src="img/bg-dishes.png">
+                            </div>
+                            <div class="dishes__content">
+                                 <p class="dishes__subtitle">Каннам салат</p>
+                                <div class="dishes__inner">
+                                    <div class="dishes__block">
+                                        <p class="dishes__price">239 ₽</p>
+                                        <p class="dishes__weight">190 ГР.</p>
+                                    </div>
+                                    <button class="btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dishes__item">
+                            <div class="dishes__image">
+                                <img src="img/bg-dishes.png">
+                            </div>
+                            <div class="dishes__content">
+                                 <p class="dishes__subtitle">Каннам салат</p>
+                                <div class="dishes__inner">
+                                    <div class="dishes__block">
+                                        <p class="dishes__price">239 ₽</p>
+                                        <p class="dishes__weight">190 ГР.</p>
+                                    </div>
+                                    <button class="btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dishes__item">
+                            <div class="dishes__image">
+                                <img src="img/bg-dishes.png">
+                            </div>
+                            <div class="dishes__content">
+                                 <p class="dishes__subtitle">Каннам салат</p>
+                                <div class="dishes__inner">
+                                    <div class="dishes__block">
+                                        <p class="dishes__price">239 ₽</p>
+                                        <p class="dishes__weight">190 ГР.</p>
+                                    </div>
+                                    <button class="btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dishes__item">
+                            <div class="dishes__image">
+                                <img src="img/bg-dishes.png">
+                            </div>
+                            <div class="dishes__content">
+                                 <p class="dishes__subtitle">Каннам салат</p>
+                                <div class="dishes__inner">
+                                    <div class="dishes__block">
+                                        <p class="dishes__price">239 ₽</p>
+                                        <p class="dishes__weight">190 ГР.</p>
+                                    </div>
+                                    <button class="btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dishes__item">
+                            <div class="dishes__image">
+                                <img src="img/bg-dishes.png">
+                            </div>
+                            <div class="dishes__content">
+                                 <p class="dishes__subtitle">77Каннам салат</p>
+                                <div class="dishes__inner">
+                                    <div class="dishes__block">
+                                        <p class="dishes__price">239 ₽</p>
+                                        <p class="dishes__weight">190 ГР.</p>
+                                    </div>
+                                    <button class="btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+</section>  
+
+<section class="order"> 
+  <div class="container container--inner">   
+    <p class="title">Оформление заказа</p>
+    <form action="  ">
+         <div class="order__wrap order__wrap--inner">  
+            <div class="order__item"> 
+                <input id="o_name" type="text" class="input">
+                <label class="order__label" for="o_name"><span>Имя</span></label>
+                <p class="order__info"><span>Обязательно</span></p>
+            </div>
+            <div class="order__item"> 
+                <input id="o_tel" type="text" class="input">
+                <label class="order__label" for="o_tel"><span>Телефон</span></label>
+                <p class="order__info"><span>Обязательно</span></p>
+            </div>
+         </div> 
+
+         <ul class="tabs__list">    
+            <li class="tabs__box tabs__box--active">Курьер</li>
+            <li class="tabs__box">Самовывоз <span class="tabs__discount">Скидка 10%</span></li>
+         </ul>
+         <div class="tabs__content">
+             <div class="tabs__item">   
+                <div class="order__item"> 
+                    <input id="o_street" type="text" class="input">
+                    <label class="order__label" for="o_street"><span>Улица</span></label>
+                    <p class="order__info"><span>Обязательно</span></p>
+                </div>
+                 <div class="order__wrap">  
+                    <div class="order__item"> 
+                        <div class="select__wrap" id="o_building">
+                            <div class="select__placeholder">Частный дом</div>
+                            <ul class="select__list" >
+                                <li class="select__item select__item--active">Частный дом</li>
+                                <li class="select__item select__item--flat">Квартира</li>
+                            </ul>
+                        </div>
+                        <label class="order__label" for="o_building"><span>Строение</span></label>
+                        <p class="order__info"><span>Обязательно</span></p>
+                    </div>
+                    <div class="order__item"> 
+                        <input id="o_house" type="text" class="input">
+                        <label class="order__label" for="o_house"><span>Номер дома</span></label>
+                        <p class="order__info"><span>Обязательно</span></p>
+                    </div>
+                    <div class="order__item order__item--data"> 
+                        <input id="o_flat" type="text" disabled class="input input--disabled">
+                        <label class="order__label" for="o_flat"><span>Квартира</span></label>
+                    </div>
+                    <div class="order__item order__item--data"> 
+                        <input id="o_entrance" type="text" disabled class="input input--disabled">
+                        <label class="order__label" for="o_entrance"><span>Подъезд</span></label>
+                    </div>
+                    <div class="order__item order__item--data"> 
+                        <input id="o_floor" type="text" disabled class="input input--disabled">
+                        <label class="order__label" for="o_floor"><span>Этаж</span></label>
+                    </div>
+                 </div> 
+             </div>
+             <div class="tabs__item" style="display: none">
+                <div class="tabs__desc">  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio odio facilis iste unde fugiat maxime, magni, ipsum! Ipsa officia voluptate tenetur esse id earum adipisci dicta, saepe possimus quasi.</p>
+                  </div>
+             </div>
+         </div>
+
+         <div class="order__item"> 
+                <textarea id="o_msg" type="text" class="input input--area"></textarea>
+                <label class="order__label" for="o_msg"><span>Комментарий к заказу</span></label>
+            </div>
+
+          <div class="order__wrap">  
+             <div class="order__item"> 
+               <div class="select__wrap" id="o_delivery">
+                    <div class="select__placeholder">Ближайшее время</div>
+                    <ul class="select__list" >
+                        <li class="select__item select__item--active">Ближайшее время</li>
+                        <li class="select__item">Завтра</li>
+                    </ul>
+                </div>
+                <label class="order__label" for="o_delivery"><span>Когда доставить</span></label>
+             </div>
+             <div class="order__item"> 
+                <div class="select__wrap" id="o_building">
+                    <div class="select__placeholder">Терминал</div>
+                    <ul class="select__list" >
+                        <li class="select__item select__item--active">Терминал</li>
+                        <li class="select__item">222</li>
+                    </ul>
+                </div>
+                <label class="order__label" for="o_pay"><span>Оплата</span></label>
+             </div>
+             <div class="order__item"> 
+                <div class="select__wrap" id="o_time">
+                    <div class="select__placeholder">10:30 - 11:30</div>
+                    <ul class="select__list" >
+                        <li class="select__item select__item--active">10:30 - 11:30</li>
+                        <li class="select__item">11:30 - 12:00</li>
+                    </ul>
+                </div>
+                <label class="order__label" for="o_time"><span>Время</span></label>
+             </div>
+             <div class="order__item"> 
+                <div class="select__wrap" id="o_date">
+                    <div class="select__placeholder">11 августа</div>
+                    <ul class="select__list" >
+                        <li class="select__item select__item--active">11 августа</li>
+                        <li class="select__item">12 августа</li>
+                    </ul>
+                </div>
+                <label class="order__label" for="o_date"><span>Дата</span></label>
+             </div>
+         </div>
+
+         <div class="line__wrap">   
+             <div class="line__item"> 
+                <p class="line__title">сумма заказа</p>
+                <p class="line__price"><span id="basket__total">239</span> ₽</p>
+            </div>
+             <div class="line__item"> 
+                <p class="line__title">Скидка</p>
+                <p class="line__price"><span id="basket__discount">80</span> ₽</p>
+            </div>
+             <div class="line__item"> 
+                <p class="line__title">Итого к оплате</p>
+                <p class="line__price"><span id="basket__pay">159</span> ₽</p>
+            </div>
+        </div>
+
+         <button class="btn btn--order">Оформить заказ</button>
+
+     </form>
+
+     <div class="order__text">  
+        <p>Если у вас возникли технические проблемы с оформлением заказа на сайте, тогда перезвоните, пожалуйста, по телефону 8 (800) 250-10-65</p>
+
+         <p>Нажимая кнопку «Оформить заказ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-Ф3 «О персональных данных», на условиях и для целей, определенных в <a href="">Согласии на обработку персональных данных</a></p>  
+     </div>
+     
+  </div>
+</section>  
+
+
+<script src="js/plugins/jquery-3.3.1.min.js"></script>
+<script src="js/plugins/scroll-lock.js"></script>
+<script src="js/plugins/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+    </body>
+</html>
+
