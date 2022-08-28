@@ -36,16 +36,16 @@
                   <div class="header__info"> 
                     <ul >
                           <li>
-                              <a href="#" class="header__link">Основные блюда</a>
+                              <a href="#main" class="header__link">Основные блюда</a>
                           </li>
                           <li>
-                              <a href="#"  class="header__link">Соусы</a>
+                              <a href="#sauces"  class="header__link">Соусы</a>
                           </li>
                           <li>
-                              <a href="#" class="header__link">Дополнительно</a>
+                              <a href="#add" class="header__link">Дополнительно</a>
                           </li>
                           <li>
-                              <a href="#" class="header__link">Напитки</a>
+                              <a href="#beverages" class="header__link">Напитки</a>
                           </li>
                       </ul>
                       <div class="info__wrap">
@@ -65,10 +65,10 @@
         <div class="container">
             <div class="header__inner">
                 <ul class="header__holder">
-                    <li><a href="" class="header__box">Основные блюда</a></li>
-                    <li><a href="" class="header__box">Соусы</a></li>
-                    <li><a href="" class="header__box">Дополнительно</a></li>
-                    <li><a href="" class="header__box">Напитки</a></li>
+                    <li><a href="#main" class="header__box">Основные блюда</a></li>
+                    <li><a href="#sauces" class="header__box">Соусы</a></li>
+                    <li><a href="#add" class="header__box">Дополнительно</a></li>
+                    <li><a href="#beverages" class="header__box">Напитки</a></li>
                 </ul>
                 <a href="" class="header__btn">239 ₽</a>
             </div>
@@ -93,7 +93,7 @@
     </div>
 </section>
 
-<section class="dishes">    
+<section class="dishes" id="main">    
     <div class="container"> 
         <p class="title">Основные блюда</p>
         <div class="dishes__wrap">
@@ -120,14 +120,14 @@
                     <img src="img/bg-dishes.png">
                 </div>
                 <div class="dishes__content">
-                     <p class="dishes__subtitle">Каннам салат</p>
+                     <p class="dishes__subtitle">тест текст</p>
                     <div class="dishes__text">
-                        <p>Морковь по-корейски, пекинская капуста, огурец, хрустящий картофель, помидоры Черри, обжаренная курица, оригинальный соус</p>
+                        <p>2Морковь по-корейски, пекинская капуста, огурец, хрустящий картофель, помидоры Черри, обжаренная курица, оригинальный соус</p>
                     </div>
                     <div class="dishes__inner">
                         <div class="dishes__block">
-                            <p class="dishes__price">239 ₽</p>
-                            <p class="dishes__weight">190 ГР.</p>
+                            <p class="dishes__price">39 ₽</p>
+                            <p class="dishes__weight">110 ГР.</p>
                         </div>
                         <button class="btn">В корзину</button>
                     </div>
@@ -191,7 +191,7 @@
     </div>
 </section>
 
-<section class="dishes dishes--inner">
+<section class="dishes dishes--inner" id="add">
     <div class="container"> 
         <p class="title">дополнительно</p>
         <div class="dishes__wrap">
@@ -319,7 +319,7 @@
     </div>
 </section>
 
-<section class="dishes dishes--inner">
+<section class="dishes dishes--inner" id="sauces">
     <div class="container"> 
         <p class="title">Соусы</p>
         <div class="dishes__wrap">
@@ -417,7 +417,7 @@
     </div>
 </section>
 
-<section class="dishes dishes--inner">
+<section class="dishes dishes--inner" id="beverages">
     <div class="container"> 
         <p class="title">Напитки</p>
         <div class="dishes__wrap">
@@ -567,6 +567,27 @@
         </div>
     </div>
 </footer>
+
+
+<div class="popup" id="popup--product">
+    <button type="button" class="popup__close"></button>
+    <div class="popup__holder">
+        <div class="popup__image">  
+           <img src="img/bg-dishes.png">
+        </div> 
+        <div class="popup__content">
+            <p class="popup__title">Каннам салат</p>
+            <div class="popup__text">   
+               <p>Морковь по-корейски, пекинская капуста, огурец, хрустящий картофель, помидоры Черри, обжаренная курица, оригинальный соус</p>
+            </div>  
+            <div class="popup__inner">  
+                <p class="popup__price">239 ₽</p>
+                <p class="popup__weight">190 гр</p>
+                <button class="btn">В корзину</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/plugins/jquery-3.3.1.min.js"></script>
 <script src="js/plugins/scroll-lock.js"></script>

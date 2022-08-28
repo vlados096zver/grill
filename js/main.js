@@ -1,4 +1,4 @@
- $(document).ready(function() {
+$(document).ready(function() {
 
    if (window.Swiper) {
 
@@ -348,3 +348,55 @@
  }
 
  InitProduct();
+
+
+ $(document).on('click', '.dishes:not(.dishes--inner) .dishes__image', function() {
+   let elem = $(this).parents('.dishes__item');
+   let title = elem.find('.dishes__subtitle').text();
+   let desc = elem.find('.dishes__text p').text();
+   let price = elem.find('.dishes__price').text();
+   let weight = elem.find('.dishes__weight').text();
+
+   $('#popup--product').addClass('popup--active');
+   let scrollableElement = document.querySelector('.popup__holder');
+   scrollLock.addScrollableTarget(scrollableElement);
+   scrollLock.disablePageScroll();
+
+   $('.popup__title').text(title);
+   $('.popup__text p').text(desc);
+   $('.popup__price').text(price);
+   $('.popup__weight').text(weight)
+ })
+
+ $(document).on('click', '.header__box, .header__link', function() {
+   scrollLock.enablePageScroll();
+   if ($(this).hasClass('header__link')) {
+     $('body').removeClass('active');
+     $('.header__info').slideUp();
+     $('.line-burger').removeClass('line-active');
+   }
+   let target = $(this).attr('href');
+   let pos = target.indexOf('#');
+   if (pos !== -1) {
+     target = target.substring(pos)
+   }
+   let coordsScroll = $(target).offset().top
+   $('html, body').animate({
+     scrollTop: coordsScroll
+   }, 600);
+   return false;
+ })
+
+ $(document).mousedown(function(e) {
+
+   if ($('#popup--product').is(e.target) && $('#popup--product').has(e.target).length === 0) {
+     $('#popup--product').removeClass('popup--active');
+     scrollLock.enablePageScroll();
+   };
+
+ })
+
+ $(document).on('click', '.popup__close', function() {
+   $('#popup--product').removeClass('popup--active');
+   scrollLock.enablePageScroll();
+ })
